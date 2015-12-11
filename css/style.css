@@ -1,10 +1,4 @@
-html {
-  font-size: 100%;
-  overflow-y: scroll;
-  -webkit-tap-highlight-color: rgba(0,0,0,0);
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: none;
-}
+html { font-size: 100%; overflow-y: scroll; -webkit-tap-highlight-color: rgba(0,0,0,0); -ms-text-size-adjust: 100%; -webkit-text-size-adjust: none;}
 body { margin: 0; font-size: 14px; line-height: 1.61; font-weight: 400;}
 body, button, input, select, textarea { font-family: 'Open Sans', sans-serif; color: #666;}
 
@@ -38,11 +32,10 @@ li span { font-size: 0.8em; text-transform: uppercase; display:block;font-weight
 
 
 footer { color: #fff; background-color: #000; margin-top: 1em; padding: .3em 1em .3em 1em;}
-
 footer span { float: right; font-style: italic;}
 
 /* Smartphones (portrait) */
 @media only screen and (max-width: 480px) {
-  body { font-size: 12px;}
-  header p { padding-left: 4.5em;}
+	body { font-size: 12px;}
+	header p { padding-left: 4.5em;}
 }
