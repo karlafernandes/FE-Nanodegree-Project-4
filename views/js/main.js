@@ -12,7 +12,7 @@ browser console. To learn more about User Timing API, check out:
 http://www.html5rocks.com/en/tutorials/webperformance/usertiming/
 
 Creator:
-Cameron Pittman, Udacity Course Developer
+Cameron Pittman, Udacity Graphic &amp; Web Designer, Front-End Developer
 cameron *at* udacity *dot* com
 */
 
