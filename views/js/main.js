@@ -448,7 +448,15 @@ var resizePizzas = function(size) {
     return dx;
   }
 
-  // Iterates through pizza elements on the page and changes their widths
+  // Interation with the Pizza sizes
+  var pizzas = document.querySelectorAll(".randomPizzaContainer");
+
+  // Put together all the same Pizzas sizes
+  var dx = determineDx(pizzas[0], size);
+
+  // Change the pizzas sizes
+  var newWidth = (pizzas[0].offsetWidth + dx) + 'px';
+
   function changePizzaSizes(size) {
     for (var i = 0; i < document.querySelectorAll(".randomPizzaContainer").length; i++) {
       var dx = determineDx(document.querySelectorAll(".randomPizzaContainer")[i], size);
@@ -498,11 +506,20 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
 // Moves the sliding background pizzas based on scroll position
+
+// Creating a variable to receive all the pizzas we are showing on the screen
+var items = [];
+
+// Critical point 
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  var items = document.querySelectorAll('.mover');
+  // Addind Pizzas
+  if (items.length == 0) {
+    items = document.querySelectorAll('.mover');
+  }
+
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
@@ -525,8 +542,8 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  
-  // Since there is around 110 pizzas possibilities, to show 25% of the choices at the first page would be enough
+
+   // Show 25% is of the pizzas
   for (var i = 0; i < 28; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
