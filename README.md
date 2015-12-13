@@ -1,3 +1,38 @@
+## PORTFOLIO PROJECT
+
+1. Customized my portfolio with my data, easy design and projects
+2. Inspect the HTML using https://validator.w3.org
+3. Inspect my CSS and validated it using http://jigsaw.w3.org
+4. Recorded timeline traces to see how the website was running
+5. Used PageSpeed Insights to check the score and used its tips to get better results:
+	5.1 Exchanged de CSS to inline
+	5.2 Unblocked some JS using async
+	5.3 Got great results to both Mobile and Desktop running at 94/100 Speed
+
+
+## PIZZA OPTIMIZATION
+
+1. Used PageSpeed Insights to check the score: Mobile 71 / desktop 94
+2. Used PageSpeed Insights tips to get better results
+	2.1 Exchanged CSS font-size to get better view in mobile
+	2.2 Inlines the CSS inline to not let it block the process
+	2.3 Inspect my CSS and validated it using http://jigsaw.w3.org
+	2.4 Got a bit better score score: Mobile 79 / Desktop 96 from 100 Speed
+3. Changed a bit the layout for the menu, and inspect the HTML using https://validator.w3.org
+4. Recorded timeline traces to see how the website was running
+5. Found the critical points in the slider and scrolling both in main.js
+	5.1 The scrolling was affected by the updatePositions function
+		which instead to create all elements every time I would school
+		I took the var items to out of the function and added all elements in a list
+		running it just once to populate the list with all the pizzas
+	5.2 Worked on the function changeSliderLabel
+		To NOT USE (determineDx / changePizzaSizes) var and functions anymore
+		avoiding the big amount of work with painting and rendering
+		that were very expensive processes using more than 16ms
+
+
+## GENERAL INSTRUCTIONS 
+
 ## Website Performance Optimization portfolio project
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).

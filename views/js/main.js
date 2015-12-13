@@ -428,7 +428,7 @@ var resizePizzas = function(size) {
 
   }
 
-  // Interation with the Pizza sizes
+  // Interaction with the Pizza sizes
   var pizzas = document.querySelectorAll(".randomPizzaContainer");
 
   // User Timing API is awesome
@@ -479,7 +479,7 @@ function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
 
-  // Addind Pizzas
+  // Adding Pizzas
   if (items.length == 0) {
     items = document.querySelectorAll('.mover');
   }
@@ -507,7 +507,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
 
-   // Show 25% is of the pizzas
+   // Show 25% of the +-110 flavors pizzas
   for (var i = 0; i < 28; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
