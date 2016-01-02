@@ -1,4 +1,7 @@
-## PORTFOLIO PROJECT
+Website Optimization
+===============================
+
+## Portfolio Project Optimization
 
 1. Customized my portfolio with my data, easy design and projects
 2. Inspect the HTML using https://validator.w3.org
@@ -10,7 +13,7 @@
 5.3 Got great results to both Mobile and Desktop running at 94/100 Speed
 
 
-## PIZZA OPTIMIZATION
+## Pizza Optimization
 
 1. Used PageSpeed Insights to check the score: Mobile 71 / desktop 94
 2. Used PageSpeed Insights tips to get better results
@@ -23,6 +26,17 @@
 5. Found the critical points in the slider and scrolling both in main.js
 5.1 The scrolling was affected by the updatePositions function which instead to create all elements every time I would school I took the var items to out of the function and added all elements in a list running it just once to populate the list with all the pizzas
 5.2 Worked on the function changeSliderLabel To NOT USE (determineDx / changePizzaSizes) var and functions anymore avoiding the big amount of work with painting and rendering that were very expensive processes using more than 16ms
+
+
+
+## How will I complete this project?
+
+1. Review our course on [Website Performance Optimization](https://www.udacity.com/course/viewer#!/c-ud884-nd) using Google PageSpeed.
+2. Download the [required project assets](https://github.com/udacity/frontend-nanodegree-mobile-portfolio).
+3. Use Chrome Developer Tools to review the current state of various pages within the application and identify areas for improvement.
+4. Review the code powering the website and identify areas where you believe modifications are warranted.
+5. Iteratively make changes and test those changes using the tools available to you to determine if they are a performance gain or loss.
+
 
 
 ## GENERAL INSTRUCTIONS 
