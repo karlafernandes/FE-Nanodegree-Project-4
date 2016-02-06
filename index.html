@@ -1,36 +1,109 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!doctype html>
+<html>
   <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Fe-nanodegree-project-4 by karlafernandes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
   <body>
-    <section class="page-header">
-      <h1 class="project-name">Fe-nanodegree-project-4</h1>
-      <h2 class="project-tagline"></h2>
-      <a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4" class="btn">View on GitHub</a>
-      <a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4/zipball/master" class="btn">Download .zip</a>
-      <a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4/tarball/master" class="btn">Download .tar.gz</a>
-    </section>
+    <div class="wrapper">
+      <header>
+        <h1>Fe-nanodegree-project-4</h1>
+        <p></p>
 
-    <section class="main-content">
-      <h2>
-<a id="website-performance-optimization-portfolio-project" class="anchor" href="#website-performance-optimization-portfolio-project" aria-hidden="true"><span class="octicon octicon-link"></span></a>Website Performance Optimization portfolio project</h2>
+        <p class="view"><a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4">View the Project on GitHub <small>karlafernandes/FE-Nanodegree-Project-4</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="website-optimization" class="anchor" href="#website-optimization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Website Optimization</h1>
+
+<h2>
+<a id="portfolio-project-optimization" class="anchor" href="#portfolio-project-optimization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Portfolio Project Optimization</h2>
+
+<ol>
+<li>Customized my portfolio with my data, easy design and projects</li>
+<li>Inspect the HTML using <a href="https://validator.w3.org">https://validator.w3.org</a>
+</li>
+<li>Inspect my CSS and validated it using <a href="http://jigsaw.w3.org">http://jigsaw.w3.org</a>
+</li>
+<li>Recorded timeline traces to see how the website was running</li>
+<li>Used PageSpeed Insights to check the score and used its tips to get better results:
+
+<ul>
+<li>Exchanged de CSS to inline</li>
+<li>Unblocked some JS using async</li>
+<li>Got great results to both Mobile and Desktop running at 94/100 Speed</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="pizza-optimization" class="anchor" href="#pizza-optimization" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Pizza Optimization</h2>
+
+<ol>
+<li>Used PageSpeed Insights to check the score: Mobile 71 / desktop 94</li>
+<li>Used PageSpeed Insights tips to get better results
+
+<ul>
+<li>Exchanged CSS font-size to get better view in mobile</li>
+<li>Inlines the CSS inline to not let it block the process</li>
+<li>Inspect my CSS and validated it using <a href="http://jigsaw.w3.org">http://jigsaw.w3.org</a>
+</li>
+<li>Got a bit better score score: Mobile 79 / Desktop 96 from 100 Speed</li>
+</ul>
+</li>
+<li>Changed a bit the layout for the menu, and inspect the HTML using <a href="https://validator.w3.org">https://validator.w3.org</a>
+</li>
+<li>Recorded timeline traces to see how the website was running</li>
+<li>Found the critical points in the slider and scrolling both in main.js
+
+<ul>
+<li>The scrolling was affected by the updatePositions function which instead to create all elements every time I would school I took the var items to out of the function and added all elements in a list running it just once to populate the list with all the pizzas</li>
+<li>Worked on the function changeSliderLabel To NOT USE (determineDx / changePizzaSizes) var and functions anymore avoiding the big amount of work with painting and rendering that were very expensive processes using more than 16ms</li>
+</ul>
+</li>
+</ol>
+
+<h2>
+<a id="how-will-i-complete-this-project" class="anchor" href="#how-will-i-complete-this-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How will I complete this project?</h2>
+
+<ol>
+<li>Review our course on <a href="https://www.udacity.com/course/viewer#!/c-ud884-nd">Website Performance Optimization</a> using Google PageSpeed.</li>
+<li>Download the <a href="https://github.com/udacity/frontend-nanodegree-mobile-portfolio">required project assets</a>.</li>
+<li>Use Chrome Developer Tools to review the current state of various pages within the application and identify areas for improvement.</li>
+<li>Review the code powering the website and identify areas where you believe modifications are warranted.</li>
+<li>Iteratively make changes and test those changes using the tools available to you to determine if they are a performance gain or loss.</li>
+</ol>
+
+<h2>
+<a id="general-instructions" class="anchor" href="#general-instructions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>GENERAL INSTRUCTIONS</h2>
+
+<h2>
+<a id="website-performance-optimization-portfolio-project" class="anchor" href="#website-performance-optimization-portfolio-project" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Website Performance Optimization portfolio project</h2>
 
 <p>Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the <a href="https://www.udacity.com/course/ud884">Critical Rendering Path course</a>.</p>
 
 <p>To get started, check out the repository, inspect the code,</p>
 
 <h3>
-<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span class="octicon octicon-link"></span></a>Getting started</h3>
+<a id="getting-started" class="anchor" href="#getting-started" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Getting started</h3>
 
 <h4>
-<a id="part-1-optimize-pagespeed-insights-score-for-indexhtml" class="anchor" href="#part-1-optimize-pagespeed-insights-score-for-indexhtml" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 1: Optimize PageSpeed Insights score for index.html</h4>
+<a id="part-1-optimize-pagespeed-insights-score-for-indexhtml" class="anchor" href="#part-1-optimize-pagespeed-insights-score-for-indexhtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 1: Optimize PageSpeed Insights score for index.html</h4>
 
 <p>Some useful tips to help you get started:</p>
 
@@ -55,14 +128,14 @@ $<span class="pl-k">&gt;</span> ngrok 8080</pre></div>
 <p>Profile, optimize, measure... and then lather, rinse, and repeat. Good luck!</p>
 
 <h4>
-<a id="part-2-optimize-frames-per-second-in-pizzahtml" class="anchor" href="#part-2-optimize-frames-per-second-in-pizzahtml" aria-hidden="true"><span class="octicon octicon-link"></span></a>Part 2: Optimize Frames per Second in pizza.html</h4>
+<a id="part-2-optimize-frames-per-second-in-pizzahtml" class="anchor" href="#part-2-optimize-frames-per-second-in-pizzahtml" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Part 2: Optimize Frames per Second in pizza.html</h4>
 
 <p>To optimize views/pizza.html, you will need to modify views/js/main.js until your frames per second rate is 60 fps or higher. You will find instructive comments in main.js. </p>
 
 <p>You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: <a href="https://developer.chrome.com/devtools/docs/tips-and-tricks">Chrome Dev Tools tips-and-tricks</a>.</p>
 
 <h3>
-<a id="optimization-tips-and-tricks" class="anchor" href="#optimization-tips-and-tricks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Optimization Tips and Tricks</h3>
+<a id="optimization-tips-and-tricks" class="anchor" href="#optimization-tips-and-tricks" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Optimization Tips and Tricks</h3>
 
 <ul>
 <li><a href="https://developers.google.com/web/fundamentals/performance/" title="web performance">Optimizing Performance</a></li>
@@ -79,7 +152,7 @@ $<span class="pl-k">&gt;</span> ngrok 8080</pre></div>
 </ul>
 
 <h3>
-<a id="customization-with-bootstrap" class="anchor" href="#customization-with-bootstrap" aria-hidden="true"><span class="octicon octicon-link"></span></a>Customization with Bootstrap</h3>
+<a id="customization-with-bootstrap" class="anchor" href="#customization-with-bootstrap" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Customization with Bootstrap</h3>
 
 <p>The portfolio was built on Twitter's <a href="http://getbootstrap.com/">Bootstrap</a> framework. All custom styles are in <code>dist/css/portfolio.css</code> in the portfolio repo.</p>
 
@@ -89,7 +162,7 @@ $<span class="pl-k">&gt;</span> ngrok 8080</pre></div>
 </ul>
 
 <h3>
-<a id="sample-portfolios" class="anchor" href="#sample-portfolios" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sample Portfolios</h3>
+<a id="sample-portfolios" class="anchor" href="#sample-portfolios" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample Portfolios</h3>
 
 <p>Feeling uninspired by the portfolio? Here's a list of cool portfolios I found after a few minutes of Googling.</p>
 
@@ -132,15 +205,13 @@ $<span class="pl-k">&gt;</span> ngrok 8080</pre></div>
 <a href="http://www.84colors.com/portfolio.html"></a><a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
 </li>
 </ul>
-
-      <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/karlafernandes/FE-Nanodegree-Project-4">Fe-nanodegree-project-4</a> is maintained by <a href="https://github.com/karlafernandes">karlafernandes</a>.</span>
-
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/karlafernandes">karlafernandes</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
-
-    </section>
-
-  
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
   </body>
 </html>
